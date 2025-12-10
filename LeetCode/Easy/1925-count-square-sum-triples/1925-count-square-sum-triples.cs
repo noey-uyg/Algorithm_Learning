@@ -4,10 +4,11 @@ public class Solution {
 
         for(int i=1;i<=n;i++){
             for(int j=1;j<=n;j++){
-                int c = (int)Math.Sqrt(i*i + j*j);
+                int temp = i*i + j*j;
+                int c = (int)Math.Sqrt(temp);
 
                 if(c>n) break;
-                if(c<=n && c*c == i*i + j*j){
+                if(c<=n && c*c == temp){
                     result++;
                 }
             }
